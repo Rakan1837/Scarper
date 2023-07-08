@@ -1,0 +1,1 @@
+# This file's purpose will be to handle the data we scraped and proccess it into a data format
