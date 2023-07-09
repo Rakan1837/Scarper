@@ -22,7 +22,7 @@ def IC_Scraper(query, path):
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
     options.add_experimental_option('excludeSwitches',['enable-logging'])
-    os.environ['PATH'] += r"/Users/rakan/Scarper/chromedriver"  # Change this to path later
+    os.environ['PgiATH'] += path  # Change this to path later
     driver = webdriver.Chrome(options=options)
     driver.implicitly_wait(5)
     driver.get("https://www.instacart.ca/store")
