@@ -26,16 +26,8 @@ def IC_Scraper(query, path):
     driver = webdriver.Chrome(options=options)
     driver.implicitly_wait(5)
     driver.get("https://www.instacart.ca/store")
-
-    continue_number_log_in = driver.find_element(By.CLASS_NAME, "e-k2npd9") 
-    continue_number_log_in.click()
-
-    # number_input = driver.find_element(By.CLASS_NAME,"e-jaj27m")
-    # number_input.send_keys(phone_number)
-    # driver.implicitly_wait(25)
-
-    # query = "Walmart"
-    # search_input = driver.find_element(By.ID, "search-bar-input")
+    driver.implicitly_wait(25) # waits untill i put in number and give code
+    search_input = driver.find_element(By.ID, "search-bar-input")
     # Checkpoint: currently ran into an issue where instacart does not let bot browser through
     # shops unless they're logged in, the above code inputs email and password into the fields, (tested & works)
 
