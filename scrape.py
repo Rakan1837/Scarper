@@ -1,5 +1,4 @@
 import os
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
@@ -28,8 +27,7 @@ def IC_Scraper(query, path):
     driver.get("https://www.instacart.ca/store")
     driver.implicitly_wait(25) # waits untill i put in number and give code
     search_input = driver.find_element(By.ID, "search-bar-input")
-    # Checkpoint: currently ran into an issue where instacart does not let bot browser through
-    # shops unless they're logged in, the above code inputs email and password into the fields, (tested & works)
+
 
     # search_input.send_keys(query)
     # sign_in_button = driver.find_element(By.CLASS_NAME, "e-heh46s")
@@ -40,5 +38,5 @@ def IC_Scraper(query, path):
     print("tests passed")  
     #driver.quit()
 # Example Call Below, will move this to main when details are finalized
-path = r"/Users/rakan/Scarper/chromedriver" 
+path = r"/Users/maleksibai/Desktop/Selenium Driver" 
 IC_Scraper("Walmart", path)
