@@ -51,9 +51,9 @@ def IC_Scraper(query, path):
 
     prod_list = driver.find_elements(By.CLASS_NAME, "e-1b0tqp" )
 
-    for prod in prod_list:
+    for prod in prod_list:   
         print(prod.text)
-    print("----------------")
+    print("-----------------")
     #print(products.text)
     
     #driver.quit()
